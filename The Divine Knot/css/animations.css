@@ -1,0 +1,111 @@
+.bigEntrance{
+	opacity: 1!important;
+	animation-name: bigEntrance;
+	-webkit-animation-name: bigEntrance;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	visibility: visible !important;
+}
+
+.aboutAnim{
+	animation-name: aboutAnim;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+
+}
+
+.fade-out{
+	animation-name: fade-out;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+
+}
+
+
+
+
+
+@keyframes bigEntrance {
+	0% {
+		transform: scale(0.0);
+		opacity: 0.2;
+	}
+	30% {
+		transform: scale(0.30);		
+		opacity: 1;
+	}
+	45% {
+		transform: scale(0.45);
+		opacity: 1;
+	}
+	60% {
+		transform: scale(0.60);		
+		opacity: 1;
+	}	
+	75% {
+		transform: scale(0.75);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(0.90);		
+		opacity: 1;
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}		
+}
+
+@keyframes aboutAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-5%);
+	}
+	30% {		
+		opacity: 0.3;
+	}
+	45% {
+		opacity: 0.45;
+	}
+	60% {		
+		opacity: 0.60;
+	}	
+	75% {
+		opacity: 0.75;
+	}
+	90% {	
+		opacity: 0.90;
+	}	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}		
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	30% {		
+		opacity: 0.70;
+	}
+	45% {
+		opacity: 0.65;
+	}
+	60% {		
+		opacity: 0.40;
+	}	
+	75% {
+		opacity: 0.35;
+	}
+	90% {	
+		opacity: 0.1;
+	}	
+	100% {
+		opacity: 0;
+		transform: translateY(-5%);
+	}		
+}
